@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Z1-1</title>
+		<script src="http://d3js.org/d3.v3.min.js" cahrset="utf-8"></script>
+
+	</head>
+	<body>
+
+		<script>
+			d3.select("body")
+				.append("h1")
+				.html("Naslov dokumenta");
+			d3.select("body")
+				.append("div")
+				.attr("id","jedan");
+			d3.select("#jedan")
+				.append("h2")
+				.html("Podnaslov 1");
+			d3.select("#jedan")
+				.append("p")
+				.html("Text 1")
+			d3.select("body")
+				.append("div")
+				.attr("id","dva")
+			d3.select("#dva")
+				.append("h2")
+				.html("Podnaslov 2");
+			d3.select("#dva")
+				.append("div")
+				.html("Text 2");
+
+
+		</script>
+
+	</body>
+	
+</html>
