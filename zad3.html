@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>Z1-1</title>
+		<title>Z1-3</title>
 		<script src="http://d3js.org/d3.v3.min.js" cahrset="utf-8"></script>
 
 	</head>
@@ -11,6 +11,18 @@
 		<script>
 			d3.select("body")
 				.selectAll("div")
+				.data(["podnaslov 1", "podnaslov 2", "podnaslov 3", "podnaslov 4", "podnaslov 5", "podnaslov 6", "podnaslov 7", "podnaslov 8"])
+				.enter()
+				.append("div")
+				.append("h2")
+				.html(function(d) {return d;});
+
+			d3.select("body")
+			.selectAll("div")
+				.data(["text 1", "text 2", "text 3", "text 4", "text 5", "text 6","text 7", "text 8"])
+				.append("p")
+				.html(function(d) {return d;});	
+				
 			
 
 
